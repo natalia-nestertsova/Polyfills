@@ -59,7 +59,7 @@ Array.prototype.myShift = function(){
 }
 
 
-
+//Array.unshift
 Array.prototype.myUnshift = function (...param) {
     var len =param.length;
 
@@ -153,9 +153,9 @@ Array.prototype.myReverse = function (){
 // Array.join 
 Array.prototype.myJoin = function (sep){
     var sepString = '';
-    if(typeof sepString ==='undefined'){sepString=','}
+    if(typeof sep==='undefined'){sep=','}
     for (var i = 0; i < this.length; i++) {
-        sepSring += this[i] + sepString ;
+        sepString += this[i] + sep ;
      }
      return sepString;
  }
